@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Delta-Test</title>
+  <meta name="description" content="Delta тестовое задание">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="MobileOptimized" content="376">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main>
+  <div class="container">
+    <h1>Delta. Тестовое задание</h1>
+    <ol>
+      <li>Сверстать таблицу (как на картинке внизу страницы) - реактивно JS-фреймворком или вручную.</li>
+      <li>При выборе (кликом) строки таблицы - появляется график с данными по этой строке.</li>
+      <li>Для отображения графика можно использовать сторонний компонент, например <a href="https://www.highcharts.com/demo" target="_blank" title="Highcharts">https://www.highcharts.com/demo</a> или другой.</li>
+    </ol>
+    <div class="wrapper">
+      <table class="table">
+        <thead>
+        <tr>
+          <th><div>Показатель</div></th>
+          <th><div>Текущий день</div></th>
+          <th><div>Вчера</div></th>
+          <th><div>Этот день недели</div></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="loader">
+          <td colspan="4">
+            <img src="img/loader.svg" alt="Loader">
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note"><b>Пояснение к заданию:</b> Таблица формируется динамически при загрузке данных с сервера в формате JSON. Значения для графиков генерируются случайным образом. Для построения графиков используется библиотека <a href="https://www.chartjs.org/" target="_blank" title="Chart.js">Chart.js</a>. При положительном проценте ячейка и текст автоматически закрашиваются в зелёный цвет, при отрицательном в красный, при нуле не изменяются.</p>
+
+    <div class="image">
+      <img src="img/table.png" alt="Таблица для задания" loading="lazy">
+    </div>
+  </div>
+</main>
+<script src="scripts/chart.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
